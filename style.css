@@ -194,16 +194,16 @@ margin-top: 200px;
 
 @keyframes homes{
     0%, 20%{
-        content: "New Web Dev"
+        content: "Web Dev"
     }
     21%, 40%{
-        content: "Junior Soft Enginer"
+        content: "Soft Enginer"
     }
     41%, 60%{
-        content: "New Web Designer"
+        content: "Web Designer"
     }
     61%, 80%{
-        content: "New Data Analist"
+        content: "Data Analist"
     }
     81%, 100%{
         content: "Content Creator"
@@ -227,7 +227,6 @@ aside img{
 @media(max-width:995px){
     nav{
         position: absolute;
-        display: none;
         top: 0;
         right: 0;
         width: 40%;
@@ -237,15 +236,14 @@ aside img{
         padding: 1rem solid;
         background-color: black;
         border-top: 0.1rem solid black;
+        
     }
-    nav .active{
-        display: block;
-    }
+   
 
     nav a{
         display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
+        font-size: 1.5rem;
+        margin: 20px ;
     }
 }
 
