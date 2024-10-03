@@ -194,16 +194,16 @@ margin-top: 200px;
 
 @keyframes homes{
     0%, 20%{
-        content: "Web Dev"
+        content: "Web Developer"
     }
     21%, 40%{
-        content: "Soft Enginer"
+        content: "Software Enginer"
     }
     41%, 60%{
         content: "Web Designer"
     }
     61%, 80%{
-        content: "Data Analist"
+        content: "Data Analists"
     }
     81%, 100%{
         content: "Content Creator"
