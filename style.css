@@ -138,10 +138,10 @@ margin-top: 200px;
 
 .btn{
     display: inline-block;
-    padding: 1rem 2.8rem;
+    padding: 1rem 2rem;
     background-color: black;
     border-radius: 4rem;
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: yellowgreen;
     letter-spacing: 0.3rem;
     border: 2px solid yellowgreen;
@@ -189,6 +189,7 @@ margin-top: 200px;
 @keyframes cursor{
     to{
         border-left: 3px solid yellowgreen;
+        
     }
 }
 
@@ -200,10 +201,10 @@ margin-top: 200px;
         content: "Software Enginer"
     }
     41%, 60%{
-        content: "Web Designer"
+        content: "Website Designer"
     }
     61%, 80%{
-        content: "Data Analists"
+        content: "Database Analists"
     }
     81%, 100%{
         content: "Content Creator"
@@ -245,6 +246,20 @@ aside img{
         font-size: 1.5rem;
         margin: 20px ;
     }
+
+    .typing-text span::before{
+        font-size: 100%;
+    }
+
+    .typing-text{
+        margin-bottom: 100px !important;
+    }
+
+
+    .typing-text span::after{
+        height: 50%;
+   
+    }
 }
 
 @media all and (min-width:800px){
@@ -262,6 +277,7 @@ aside img{
     }
 }
 @media all and (min-width:600px){
+    
     .aside{
         flex: 1;
     }
