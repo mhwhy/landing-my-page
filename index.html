@@ -5,29 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LANDING PAGE PROJECT</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- external css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- header -->
-    <header >
-        <!-- logo -->
+    <header class="bg-gray-950 sticky top-0 ">
 
-            <a href="#logo" class="logo">Why</a>
-    
-        
         <!-- navbar -->
-        <nav >
-           <a href="#home">Home</a>
-           <a href="#skils">Skils</a>
-           <a href="#project">Project</a>
-           <a href="#contact">Contact</a>
+        <nav class="container  mx-auto flex justify-between items-center">
+            <!-- logo -->
+            <a href="#logo" class="logo">Why</a>
+            <ul class="flex">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skils">Skils</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- isi konten -->
    <main>
+
+    
         <article class="main">
             <div class="home-content">
                 <h1>Hello, I Am <span>Wahyu</span> </h1>
