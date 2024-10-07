@@ -235,7 +235,7 @@ aside img{
 /* responsive */
 
 @media(max-width:995px){
-    nav{
+    /* nav{
         position: absolute;
         top: 0;
         right: 0;
@@ -247,14 +247,14 @@ aside img{
         background-color: black;
         border-top: 0.1rem solid black;
         
-    }
+    } */
    
 
-    nav a{
+    /* nav a{
         display: block;
         font-size: 1.5rem;
         margin: 20px ;
-    }
+    } */
 
     .typing-text span::before{
         font-size: 100%;

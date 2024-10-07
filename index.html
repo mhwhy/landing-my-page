@@ -10,10 +10,6 @@
     <!-- external css -->
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script>
-        AOS.init();
-      </script>
 </head>
 <body>
 
@@ -21,15 +17,18 @@
     <header class="bg-gray-950 sticky top-0 ">
 
         <!-- navbar -->
-        <nav class="container px-10 py-4 mx-auto flex justify-between items-center">
+        <nav class="md:container w-11/12 px-10 py-4 mx-auto flex justify-between items-center">
             <!-- logo -->
             <a href="#logo" class="logo">Why</a>
-            <ul class="flex">
+            <ul class="menu md:flex hidden">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#skils">Skils</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#skils">skils</a></li>
+                <li><a href="#about">Contact</a></li>
             </ul>
+            <button class="hamburger-menu text-2xl  md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
     
@@ -62,12 +61,12 @@
 
     <!-- portfolio -->
     <section id="portfolio" class=" mt-10 py-20">
-        <div class="container mx-auto  text-center">
+        <div class="w-11/12 md:container mx-auto  text-center">
             <h3 class="text-5xl font-bold mb-5 clr">My Portfolio</h3>
             <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod officiis nihil est.</p>
         </div>
 
-        <div class=" grid grid-cols-2 gap-8 mx-3 my-3">
+        <div class=" grid grid-cols-1 md:grid-cols-2 gap-8 mx-3 my-3">
 
             <!-- portfolio 1 -->
             <div class="border flex space-x-5 px-8 py-8 rounded-xl">
@@ -99,7 +98,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi.</p>
         </div>
 
-        <div class="grid grid-cols-4 gap-6 mx-auto container">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mx-auto w-11/12 md:container">
 
             <!-- skils 1 -->
             <div class="border">
@@ -142,9 +141,9 @@
     </section>
 
     <!-- about me -->
-    <section id="about" class="container mx-auto my-10">
+    <section id="about" class="w-11/12 md:container mx-auto my-10">
         <div class=" flex space-x-10 items-start">
-            <img class="rounded-lg" src="/image/ak.jpeg" width="500" alt="">
+            <img class="rounded-lg w-24" src="/image/ak.jpeg" alt="">
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, deleniti!</p>
                 <h4 class="text-4xl font-bold my-10 clr">About Me</h4>
@@ -163,6 +162,7 @@
 
 </body>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+
 <script src="https://kit.fontawesome.com/fb7b96bb2d.js" crossorigin="anonymous"></script>
 </html>
