@@ -1,169 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LANDING PAGE PROJECT</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- tailwind -->
+    <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- external css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <!-- css eksternal -->
+     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-[#1E2A38] text-white">
 
-    <!-- header -->
-    <header class="bg-gray-950 sticky top-0 ">
-
-        <!-- navbar -->
-        <nav class="md:container w-11/12 px-10 py-4 mx-auto flex justify-between items-center">
-            <!-- logo -->
-            <a href="#logo" class="logo">Why</a>
-            <ul  class="hidden menu md:flex md:relative md:top-0 md:divide-y-0 md:w-auto">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#skils">skils</a></li>
-                <li><a href="#about">Contact</a></li>
-            </ul>
-            <button class="hamburger-menu text-2xl  md:hidden">
-                <i class="fa-solid fa-bars"></i>
-                <i style="display: none;" class="fa-solid fa-x"></i>
-            </button>
+    <!-- haeader starrtt -->
+    <header class="navbar flex justify-between items-center p-6">
+        <div class="text-lg font-bold">PORTFOLIO</div>
+        <nav class="hidden md:flex space-x-4 md:space-x-8">
+            <a href="#" class="nav-link">HOME</a>
+            <a href="#" class="nav-link">SKILS</a>
+            <a href="#" class="nav-link">PORTFOLIO</a>
+            <a href="#" class="nav-link">SERTIFICATE</a>
         </nav>
+        <div class="md:hidden">
+            <button id="menu-btn" class="text-2xl focus:outline-none menu-icon p-2 rounded">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
+    <div id="mobile-menu" class="hidden md:hidden mt-16">
+        <nav class="flex flex-col items-center space-y-4">
+            <a href="#" class="nav-link">HOME</a>
+            <a href="#" class="nav-link">SKILS</a>
+            <a href="#" class="nav-link">PORTFOLIO</a>
+            <a href="#" class="nav-link">SERTIFICATE</a>
+        </nav>
+    </div>
+    <!-- haeader end -->
+
     
-    <!-- isi konten -->
-    <main>
-        
-    <!-- hero -->
-    
-    <section>
-        <article class="main mx-auto flex items-center container px-10 ">
-            <div class="home-content  mx-auto text-center">
-                <h1>Hello, I Am <span>Wahyu</span> </h1>
-                <h3 class="typing-text">
-                    I'm a <span></span>
-                </h3>
-                <p>“There are three responses to a design – yes, no and WOW! Wow is the response to aim for”
-                    -Milton Glase.</p>
-                    <div class="social-icon">
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/mhwhy"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/muhammadwahyuuuuuu_"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <a href="https://www.instagram.com/muhammadwahyuuuuuu_" class="btn">Follow Me</a>               
-                </div>
-            </article>
-            <!-- <aside  class="aside aside1 border">
-                <img  src="image/ak.jpeg" alt="">
-            </aside> -->      
-    </section>
-
-    <!-- portfolio -->
-    <section id="portfolio" class=" mt-10 py-20">
-        <div class="w-11/12 md:container mx-auto  text-center">
-            <h3 class="text-5xl font-bold mb-5 clr">My Portfolio</h3>
-            <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod officiis nihil est.</p>
+    <main class="text-center mt-20 md:mt-32 px-4">
+        <h1 class="text-xl md:text-2xl">HELLO it's Me</h1>
+        <h2 class="text-2xl md:text-4xl font-bold mt-4">Muhamad Wahyu</h2>
+        <h3 class="text-xl md:text-2xl mt-2">And I'm a <span class="text-[#2CA3A3] typing">Frontend Developer</span></h3>
+        <p class="mt-4">someone who enjoys the world of web design and web development<br>someone who enjoys the world of web design</p>
+        <div class="flex justify-center space-x-4 md:space-x-8 mt-8">
+            <a href="#" class="icon-circle text-[#2CA3A3] text-2xl md:text-3xl"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon-circle text-[#2CA3A3] text-2xl md:text-3xl"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="icon-circle text-[#2CA3A3] text-2xl md:text-3xl"><i class="fab fa-github"></i></a>
         </div>
-
-        <div class=" grid grid-cols-1 md:grid-cols-2 gap-8 mx-3 my-3">
-
-            <!-- portfolio 1 -->
-            <div class="border flex space-x-5 px-8 py-8 rounded-xl">
-                <img src="/image/ak.jpeg" class="w-28" alt="">
-                <div>
-                    <h4 class="text-2xl font-bold mb-5 clr">Aplikasi Pengaduan</h4>
-                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quo.</p>
-                    <a href="">read more</a>
-                </div>
-            </div>
-            <!-- portfolio 1 -->
-            <div class="border flex space-x-5 px-8 py-8 rounded-xl">
-                <img src="/image/ak.jpeg" class="w-28" alt="">
-                <div>
-                    <h4 class="text-2xl font-bold mb-5 clr">Aplikasi Pengaduan</h4>
-                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quo.</p>
-                    <a href="">read more</a>
-                </div>
-            </div>
-            
-        </div>
-
-    </section>
-
-    <!-- skils -->
-    <section id="skils" class=" mt-10 py-10">
-        <div class="container mx-auto text-center mb-5">
-            <h4 class="text-4xl font-bold mb-5 clr">My Skils</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sequi.</p>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mx-auto w-11/12 md:container">
-
-            <!-- skils 1 -->
-            <div class="border">
-                <a href="">
-                    <img src="/image/ak.jpeg" class="w-full" alt="">
-                    <div class="text-center py-3 font-bold">
-                        <h4 class="mt-2">html</h4>
-                    </div>
-                </a>
-            </div>
-            <!-- skils 1 -->
-            <div class="border">
-                <a href="">
-                    <img src="/image/ak.jpeg" class="w-full" alt="">
-                    <div class="text-center py-3 font-bold">
-                        <h4 class="mt-2">html</h4>
-                    </div>
-                </a>
-            </div>
-            <!-- skils 1 -->
-            <div class="border">
-                <a href="">
-                    <img src="/image/ak.jpeg" class="w-full" alt="">
-                    <div class="text-center py-3 font-bold">
-                        <h4 class="mt-2">html</h4>
-                    </div>
-                </a>
-            </div>
-            <!-- skils 1 -->
-            <div class="border">
-                <a href="">
-                    <img src="/image/ak.jpeg" class="w-full" alt="">
-                    <div class="text-center py-3 font-bold">
-                        <h4 class="mt-2">html</h4>
-                    </div>
-                </a>
-            </div>
-            
-        </div>
-    </section>
-
-    <!-- about me -->
-    <section id="about" class="w-11/12 md:container mx-auto my-10">
-        <div class=" flex space-x-10 items-start">
-            <img class="rounded-lg w-24" src="/image/ak.jpeg" alt="">
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, deleniti!</p>
-                <h4 class="text-4xl font-bold my-10 clr">About Me</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa inventore ex hic consequatur ratione accusantium sunt dignissimos modi harum aut.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa inventore ex hic consequatur ratione accusantium sunt dignissimos modi harum aut.</p>
-            </div>
-        </div>
-    </section>
-
+        <button class="mt-8 px-4 py-2 md:px-6 md:py-3 bg-[#2CA3A3] text-white rounded-full surprise-button">DOWNLOAD CV</button>
     </main>
-    
-    <footer class="footer">
-        <h1>Create by why @2024</h1>
+    <section class="bg-[#2CA3A3] py-16 mt-10 md:mt-20 px-4">
+        <h2 class="text-xl md:text-2xl font-bold text-center mb-8">My Skils</h2>
+        <div class="slider">
+            <div class="slider-item flex justify-center space-x-4 md:space-x-8">
+                <div class=" md:w-24 md:h-24 shock-effect"><img src="/image/html.png" alt="" srcset=""></div>
+                <div class=" md:w-24 md:h-24 shock-effect"><img src="/image/css.png" alt="" srcset=""></div>
+                <div class=" md:w-24 md:h-24 shock-effect"><img src="/image/js.png" alt="" srcset=""></div>
+            
+            </div>
+            <div class="slider-item flex justify-center space-x-4 md:space-x-8">
+                <div class=" md:w-24 md:h-24 shock-effect"><img src="/image/tailwind.png" alt="" srcset=""></div>
+                <div class=" md:w-24 md:h-24 shock-effect"><img src="/image/git.png" alt="" srcset=""></div>
+                <div class=" md:w-24 md:h-24 shock-effect"><img src="/image/laravel.png" alt="" srcset=""></div>
+            
+            </div>
+        </div>
+    </section>
+    <section class="py-16 mt-10 md:mt-20 px-4">
+        <h2 class="text-xl md:text-2xl font-bold text-center mb-8">My Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
+            <div class="portfolio-item w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded" onclick="toggleInfoBox(this)">
+                <div class="info-box">
+                    <p>Project Information</p>
+                </div>
+            </div>
+            <div class="portfolio-item w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded" onclick="toggleInfoBox(this)">
+                <div class="info-box">
+                    <p>Project Information</p>
+                </div>
+            </div>
+            <div class="portfolio-item w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded" onclick="toggleInfoBox(this)">
+                <div class="info-box">
+                    <p>Project Information</p>
+                </div>
+            </div>
+            <div class="portfolio-item w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded" onclick="toggleInfoBox(this)">
+                <div class="info-box">
+                    <p>Project Information</p>
+                </div>
+            </div>
+            <div class="portfolio-item w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded" onclick="toggleInfoBox(this)">
+                <div class="info-box">
+                    <p>Project Information</p>
+                </div>
+            </div>
+            <div class="portfolio-item w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded" onclick="toggleInfoBox(this)">
+                <div class="info-box">
+                    <p>Project Information</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#2CA3A3] py-16 mt-10 md:mt-20 px-4">
+        <h2 class="text-xl md:text-2xl font-bold text-center mb-8">My Certificate</h2>
+        <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
+            <div class="w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded"></div>
+            <div class="w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded"></div>
+        </div>
+    </section>
+    <footer class="text-center py-8 mt-10 md:mt-20">
+        <p>SimpleDesign by why @2024</p>
     </footer>
-
-
+   <script src="script.js"></script>
 </body>
-
-<script src="script.js"></script>
-
-<script src="https://kit.fontawesome.com/fb7b96bb2d.js" crossorigin="anonymous"></script>
 </html>
