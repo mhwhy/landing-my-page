@@ -3,114 +3,136 @@
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <!-- css eksternal -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#1E2A38] text-white">
-
-    <!-- haeader starrtt -->
-    <header class="navbar flex justify-between items-center p-6">
+<body class="bg-[#1E2A38] text-white font-poppins">
+    <!-- Header Start -->
+    <header class="navbar fixed w-full flex justify-between items-center p-6 transition-all duration-300">
         <div class="text-lg font-bold">PORTFOLIO</div>
-        <nav class="hidden md:flex space-x-4 md:space-x-8">
+        <nav class="hidden md:flex space-x-6">
             <a href="#" class="nav-link">HOME</a>
-            <a href="#" class="nav-link">SKILS</a>
-            <a href="#" class="nav-link">PORTFOLIO</a>
-            <a href="#" class="nav-link">SERTIFICATE</a>
+            <a href="#skills" class="nav-link">SKILLS</a>
+            <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+            <a href="#sertifikat" class="nav-link">CERTIFICATE</a>
         </nav>
         <div class="md:hidden">
-            <button id="menu-btn" class="text-2xl focus:outline-none menu-icon p-2 rounded">
+            <button id="menu-btn" class="text-2xl focus:outline-none menu-icon">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
-    <div id="mobile-menu" class="hidden md:hidden mt-16">
-        <nav class="flex flex-col items-center space-y-4">
-            <a href="#" class="nav-link">HOME</a>
-            <a href="#" class="nav-link">SKILS</a>
-            <a href="#" class="nav-link">PORTFOLIO</a>
-            <a href="#" class="nav-link">SERTIFICATE</a>
-        </nav>
-    </div>
-    <!-- haeader end -->
 
-    <!-- hero start -->
-    <main class="text-center mt-20 md:mt-32 px-4">
-        <h1 class="text-xl md:text-2xl">HELLO it's Me</h1>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center space-y-6">
+        <a href="#" class="nav-link">HOME</a>
+        <a href="#skills" class="nav-link">SKILLS</a>
+        <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+        <a href="#sertifikat" class="nav-link">CERTIFICATE</a>
+    </div>
+    <!-- Header End -->
+
+    <!-- Hero Start -->
+    <main class="text-center mt-24 md:mt-32 px-4">
+        <h1 class="text-xl md:text-2xl">HELLO, it's Me</h1>
         <h2 class="text-2xl md:text-4xl font-bold mt-4">Muhamad Wahyu</h2>
         <h3 class="text-xl md:text-2xl mt-2">And I'm a <span class="text-[#2CA3A3] typing">Frontend Developer</span></h3>
-        <p class="mt-4">someone who enjoys the world of web design and web development<br>someone who enjoys the world of web design</p>
-        <div class="flex justify-center space-x-4 md:space-x-8 mt-8">
-            <a href="#" class="icon-circle text-[#2CA3A3] text-2xl md:text-3xl"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="icon-circle text-[#2CA3A3] text-2xl md:text-3xl"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="icon-circle text-[#2CA3A3] text-2xl md:text-3xl"><i class="fab fa-github"></i></a>
+        <p class="mt-4">Passionate about web design and development.</p>
+        <div class="flex justify-center space-x-4 mt-8">
+            <a href="#" class="icon-circle text-[#2CA3A3] text-2xl"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon-circle text-[#2CA3A3] text-2xl"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="icon-circle text-[#2CA3A3] text-2xl"><i class="fab fa-github"></i></a>
         </div>
-        <button class="mt-8 px-4 py-2 md:px-6 md:py-3 bg-[#2CA3A3] text-white rounded-full surprise-button">DOWNLOAD CV</button>
+        <button class="mt-8 px-6 py-3 bg-[#2CA3A3] rounded-full surprise-button">DOWNLOAD CV</button>
     </main>
-    <!-- hero end -->
+    <!-- Hero End -->
 
-    <!-- skils starst -->
-    <section class="bg-[#2CA3A3] py-16 mt-10 md:mt-20 px-4">
-        <h2 class="text-3xl text-center mb-10">My Skils</h2>
-        <div class="flex justify-center space-x-10">
-            <div class="bg-gray-800 p-6 rounded-full border-4 border-green-500">
-                <img alt="HTML5 logo" class="w-20 h-20" height="100" src="/image/html.png" width="100"/>
+    <!-- Skills Section -->
+    <section id="skills" class="bg-[#2CA3A3] py-16 mt-10 md:mt-20 px-4">
+        <h2 class="text-3xl text-center mb-10">My Skills</h2>
+        <div class="slider">
+            <div class="slider-track">
+            <div class="slide shock-effect">
+                <img src="/image/html.png" alt="" srcset="">
             </div>
-            <div class="bg-gray-800 p-6 rounded-full border-4 border-green-500">
-                <img alt="CSS3 logo" class="w-20 h-20" height="100" src="/image/css.png" width="100"/>
+            <div class="slide shock-effect">
+                <img src="/image/css.png" alt="" srcset="">
             </div>
-            <div class="bg-gray-800 p-6 rounded-full border-4 border-green-500">
-                <img alt="JavaScript logo" class="w-20 h-20" height="100" src="/image/js.png" width="100"/>
+            <div class="slide shock-effect">
+                <img src="/image/js.png" alt="" srcset="">
             </div>
-            <div class="bg-gray-800 p-6 rounded-full border-4 border-green-500">
-                <img alt="Tailwind CSS logo" class="w-20 h-20" height="100" src="/image/tailwind.png" width="100"/>
+            <div class="slide shock-effect">
+                <img src="/image/git.png" alt="" srcset="">
+            </div>
+            <!-- <div class="slide">
+                <img src="/image/tailwind.png" alt="" srcset="">
+            </div> -->
+            <div class="slide shock-effect">
+                <img src="/image/laravel.png" alt="" srcset="">
             </div>
         </div>
+       </div>
     </section>
-    <!-- skils starst -->
 
-
-    <!-- portfolio starst -->
+   
     
-    <section class="py-16 mt-10 md:mt-20 px-4">
-        <h2 class="text-xl md:text-2xl font-bold text-center mb-8">My Portfolio</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
-            <div class="portfolio-item w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded" onclick="toggleInfoBox(this)">
-                <img src="/image/baru.png"  alt="">
+    
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 mt-10 md:mt-20 px-4">
+        <h2 class="text-2xl font-bold text-center mb-8">My Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+            <div class="portfolio-item relative w-48 h-32 bg-gray-300 rounded shock-effect">
+                <img src="/image/baru.png" alt="">
                 <div class="info-box">
                     <p>Project Information</p>
                 </div>
             </div>
-            <div class="portfolio-item w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded" onclick="toggleInfoBox(this)">
-                <img src="/image/baru.png"  alt="">
+            <div class="portfolio-item relative w-48 h-32 bg-gray-300 rounded shock-effect">
+                <img src="/image/baru.png" alt="">
                 <div class="info-box">
                     <p>Project Information</p>
                 </div>
             </div>
-            <div class="portfolio-item w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded" onclick="toggleInfoBox(this)">
-                <img src="/image/baru.png" style="width: 100%;" alt="">
+            <div class="portfolio-item relative w-48 h-32 bg-gray-300 rounded shock-effect">
+                <img src="/image/baru.png" alt="">
                 <div class="info-box">
                     <p>Project Information</p>
                 </div>
             </div>
-          
+            <div class="portfolio-item relative w-48 h-32 bg-gray-300 rounded shock-effect">
+                <img src="/image/baru.png" alt="">
+                <div class="info-box">
+                    <p>Project Information</p>
+                </div>
+            </div>
+            <div class="portfolio-item relative w-48 h-32 bg-gray-300 rounded shock-effect">
+                <img src="/image/baru.png" alt="">
+                <div class="info-box">
+                    <p>Project Information</p>
+                </div>
+            </div>
+            <div class="portfolio-item relative w-48 h-32 bg-gray-300 rounded shock-effect">
+                <img src="/image/baru.png" alt="">
+                <div class="info-box">
+                    <p>Project Information</p>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- portfolio ends -->
 
-
-
-    <section class="bg-[#2CA3A3] py-16 mt-10 md:mt-20 px-4">
-        <h2 class="text-xl md:text-2xl font-bold text-center mb-8">My Certificate</h2>
-        <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
-            <div class="w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded"><img src="/image/sertifikat_course_123_2096858_041024133658_page-0001.jpg" alt=""></div>
-            <div class="w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded"><img src="/image/SERTIFIKAT GIT (VERSION CONTROL SYSTEM).png" alt=""></div>
-            <div class="w-40 h-24 md:w-48 md:h-32 bg-gray-300 rounded"><img src="/image/E-Certificate Competition_Oceanic-team_Muhamad Wahyu Saputra_page-0001.jpg" alt=""></div>
+    <!-- Certificates Section -->
+    <section id="sertifikat" class="bg-[#2CA3A3] py-16 mt-10 md:mt-20 px-4">
+        <h2 class="text-2xl font-bold text-center mb-8">My Certificate</h2>
+        <div class="flex items-center  flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
+            <div class="w-48 h-32 bg-gray-300 rounded shock-effect"><img src="/image/sertifikat_course_123_2096858_041024133658_page-0001.jpg" alt=""></div>
+            <div class="w-48 h-32 bg-gray-300 rounded shock-effect"><img src="/image/E-Certificate Competition_Oceanic-team_Muhamad Wahyu Saputra_page-0001.jpg" alt=""></div>
+            <div class="w-48 h-32 bg-gray-300 rounded shock-effect"><img src="/image/SERTIFIKAT GIT (VERSION CONTROL SYSTEM).png" alt=""></div>
         </div>
     </section>
-    <footer class="text-center py-8 mt-10 md:mt-20">
+
+    <footer class="text-center pb-8 mt-10 md:mt-20">
         <p>SimpleDesign by why @2024</p>
     </footer>
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

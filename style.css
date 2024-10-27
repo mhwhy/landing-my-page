@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 .icon-circle {
     position: relative;
@@ -71,15 +72,7 @@
     color: white;
     transform: scale(1.1) rotate(5deg);
 }
-.slider {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-}
-.slider-item {
-    min-width: 50%;
-    transition: transform 0.2s ease;
-}
+
 .shock-effect {
     transition: transform 0.1s ease;
 }
@@ -87,14 +80,9 @@
     transform: scale(1.2);
 }
 .portfolio-item {
-    position: relative;
-    cursor: pointer;
     transition: transform 0.3s ease;
 }
-.portfolio-item:hover {
-    transform: scale(1.05);
-}
-.portfolio-item .info-box {
+.info-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -108,9 +96,8 @@
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
     transform: scale(0.9);
-    backdrop-filter: blur(5px);
 }
-.portfolio-item.active .info-box {
+.portfolio-item:hover .info-box {
     opacity: 1;
     transform: scale(1);
 }
@@ -125,4 +112,42 @@
 .navbar.scrolled {
     background-color: rgba(30, 42, 56, 0.8);
     backdrop-filter: blur(10px);
+}
+
+.slider{
+
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+
+
+.slide{
+   
+    border: 2px solid rgb(255, 255, 255);
+   margin: 10px;
+    padding: 20px;
+    display: inline-flex;
+    border-radius: 8px;
+    background: black;
+}
+
+.slide:hover{
+    background-color: #fdfdfd;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+    
+}
+
+.slide img{
+    width: 50%;
+    border-radius: 8px;
+    border: #ffffff 2px solid;
+    padding: 10px;
 }
